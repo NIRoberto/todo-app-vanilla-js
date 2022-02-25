@@ -40,7 +40,8 @@ btn.addEventListener("click", (e) => {
 
       btn.addEventListener('click', () => {
         items.splice(index, 1, input.textContent);
-        console.log(items);
+        // items.push(input.textContent);
+      allItems.removeChild(up.parentElement);
         btn.textContent = "Add";
         input.value = "";
       })
