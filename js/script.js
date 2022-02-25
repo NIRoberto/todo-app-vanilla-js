@@ -39,9 +39,10 @@ btn.addEventListener("click", (e) => {
       console.log(index);
 
       btn.addEventListener('click', () => {
-        // items[index] = input.value;
         items.splice(index, 1, input.textContent);
         console.log(items);
+        btn.textContent = "Add";
+        input.value = "";
       })
     })
     items.map((el) => {
@@ -63,3 +64,4 @@ btn.addEventListener("click", (e) => {
     input.value = "";
   }
 });
+
